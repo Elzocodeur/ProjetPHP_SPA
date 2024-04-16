@@ -8,14 +8,14 @@
 					
 			<div class="main">
 						<?php 
-								$refDig = findAllReferentiels();
-								if (isset($_POST["search"])){
-									$refDig= recherche($_POST["search"]);
+								$tabInt=array();
+								foreach($refDig as $referent){
+									if($_SESSION["id_promotion"] == $referent["id_promotion"]){
+										$tabInt[] = $referent;
+									}
+
 								}
-
-
-						$referentiel = findAllReferentiels();
-						
+								$refDig=$tabInt;
 								foreach($refDig as $referent) :  ?>
 
 								<div class="img">

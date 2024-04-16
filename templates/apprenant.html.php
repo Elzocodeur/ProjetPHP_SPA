@@ -31,7 +31,7 @@
                 </div>
                 <form class="line3" action="" method="post">
                     <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                    <input type="text" name="filtrer" placeholder="Filtrer">
+                    <input type="text" name="search" placeholder="Filtrer">
                 </form>
 
                 <div class="line4"><img src="public/images/img.png" width="5%" height="10%"></div>
@@ -58,14 +58,11 @@
                             <?php
 
                     
-                                    
-                            // $apprenants = findAllStudents();
-                            // if (isset($_POST["filtrer"])){
-                            // $apprenants= recherche($_POST["filtrer"]);
-                            // }
 
 
-                            foreach ($etudiantsPage as $student) :  ?>
+
+
+                            foreach ($apprenants as $student) :  ?>
                                 <tr class="line">
 
 
@@ -96,7 +93,7 @@
                                     </td>
                                     <td class="bloc">
                                         <div class="col-haut"></div>
-                                        <input type="checkbox" id="my-checkbox-0" <?php if ($student['action']) : ?> checked <?php endif; ?>>
+                                        <input type="checkbox" id="my-checkbox-0" <?php if ($student['action']) : ?> checked <?php endif; ?> >
                                         <label for="my-checkbox-0"></label>
 
                                     </td>

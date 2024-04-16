@@ -2,7 +2,8 @@
 
 function findAllStudents(){
     $student = [
-        [ "image" => 'img1.png',
+        [ 
+        "image" => 'img1.png',
         "nom" => 'elimane',
         "prenom" => 'nging',
         "email" => 'elimane@nging',
@@ -86,11 +87,27 @@ function findAllStudents(){
 ]
     ];
 
+    savefile(PATHAPRENANT, $student);
+
+    $student = loadFile(PATHAPRENANT);
+
 return $student;
 
 }
 
 
+//  filtrer  par email  
+function recherche($filtrer){
+    $recherches=findAllStudents();
+    $result=[];
+foreach($recherches as  $recherche ) {  
+
+    if($recherche["email"]==trim($filtrer)){
+        $result[]=$recherche;
+    }       
+}  
+return $result;
+}
 
 // fonction pagination
 $eleByPage=4 ;
@@ -105,19 +122,11 @@ $etudiantsPage = array_slice(findAllStudents(), $eleDeb, $eleByPage);
 
 
 
-
-//  filtrer  par email  
-function recherche($filtrer){
-            $recherches=findAllStudents();
-            $result=[];
-        foreach($recherches as  $recherche ) {  
-
-            if($recherche["email"]==trim($filtrer)){
-                $result[]=$recherche;
-            }       
-        }  
-        return $result;
-        }
+$apprenants =findAllStudents();
+$apprenants = $etudiantsPage;
+if (isset($_POST["search"])){
+    $apprenants= recherche($_POST["search"]);
+}
 
 
 

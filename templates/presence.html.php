@@ -30,13 +30,34 @@
                         </select>
                     </div>
                     <div class="boite clandrier flex-cc">
-                    <input type="date" name="date" id="date" value="<?= date('Y-m-d'); ?>" width="10">
+                    <input type="date" name="b" id="date" value="<?= date('Y-m-d');?>">
                     </div>
                     <div class="boite boutton flex-cc" style="background: #029386;">
                         <button type="submit">rafraichir</button>
                     </div>
                 </div>
-                <table class="table">
+                <style>
+                    .present {
+                        background-color: green;
+                        opacity: 0.4;
+                        width: 20px;
+                        border: 10px solid  white;
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: black;
+                    }
+                    .absent {
+                        background-color: red;
+                        opacity: 0.4;
+                        width: 20px;
+                        border: 10px solid  white;
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: black;
+
+                    }
+                </style>
+                            <table class="table">
 
                     <thead>
                         <tr>
@@ -53,22 +74,17 @@
                     <tbody>
                     
                         <?php
-                                $presence = listPresence();
-                                if (isset($_POST["search"])){
-                                    $presence= recherche($_POST["search"]);
-                                }
-                                
-                                //var_dump($presenceFilter);
-                                foreach ($etudiantsPage as $student) {
+                        
+                                foreach ($presence as $student) {
                                 ?>
-                                    <tr>
+                                    <tr >
                                         <td><?= $student["matricule"]; ?></td>
                                         <td><?= $student["nom"]; ?></td>
                                         <td><?= $student["prenom"]; ?></td>
                                         <td><?= $student["telephone"]; ?></td>
                                         <td><?= $student["referenciel"]; ?></td>
                                         <td><?= $student["duree"]; ?></td>
-                                        <td><?= $student["status"]; ?></td>
+                                        <td class="<?= $student["status"] == 'present' ? 'present' : 'absent' ?>"><?= $student["status"]; ?></td>
                                     </tr>
                                 <?php
                                 
