@@ -6,7 +6,7 @@
     <div class="conteneur">
         <div class="contain1">
             <span>Promotion :</span>
-            <span>promotion 6</span>
+            <span>promotion <?= $_SESSION['id_promotion']?></span>
         </div>
         <div class="contain2">
             <span>Referentiel :</span>
@@ -58,7 +58,6 @@
                             <?php
 
                     
-
 
 
 

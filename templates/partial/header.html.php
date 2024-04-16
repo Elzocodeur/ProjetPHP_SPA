@@ -33,7 +33,7 @@
         </form>
     </div>
     <div class="flex-right">
-        <input type="date" name="dateofbirth" id="dateofbirth" value="2024-04-01">
+        <input type="date" name="dateofbirth" id="dateofbirth" value="<?= date('Y-m-d');?>">
         <div class="profil">
             <img src="public/images/profile.jpeg" class="image" alt="">
             <div class="info">

@@ -3,88 +3,239 @@
 function findAllStudents(){
     $student = [
         [ 
+        "id"=> 1,
         "image" => 'img1.png',
         "nom" => 'elimane',
         "prenom" => 'nging',
         "email" => 'elimane@nging',
         "genre" => 'M',
         "telephone" => '777777777',
+        "id_promotion"=> 1,
         "action" => false
         
     ],
-        [ "image" => 'img1.png',
+        [ 
+            "id"=> 2,
+            "image" => 'img1.png',
             "nom" => 'seydina',
             "prenom" => 'mhd',
             "email" => 'moussa',
             "genre" => 'M',
             "telephone" => '777777777',
+            "id_promotion"=> 1,
             "action" => false
             
         ],
-        [ "image" => 'img1.png',
+        [ 
+            "id"=> 3,
+            "image" => 'img1.png',
             "nom" => 'pathe',
             "prenom" => 'pathe',
             "email" => 'pathe',
             "genre" => 'M',
             "telephone" => '777120777',
+            "id_promotion"=> 2,
             "action" => true
             
         ], 
-        [ "image" => 'img1.png',
+        [ 
+            "id"=> 4,
+            "image" => 'img1.png',
             "nom" => 'modou',
             "prenom" => 'modou',
             "email" => 'modou',
             "genre" => 'M',
             "telephone" => '777347977',
+            "id_promotion"=> 2,
             "action" => false
             
         ],
-        [ "image" => 'img1.png',
+        [ 
+            "id"=> 5,
+            "image" => 'img1.png',
             "nom" => 'andaw',
             "prenom" => 'andaw',
             "email" => 'andaw',
             "genre" => 'M',
             "telephone" => '777729777',
+            "id_promotion"=> 2, 
             "action" => true
             
         ],
-        [ "image" => 'img1.png',
+        [ 
+            "id"=> 6,
+            "image" => 'img1.png',
             "nom" => 'issa',
             "prenom" => 'issa',
             "email" => 'issa',
             "genre" => 'M',
             "telephone" => '777987777',
+            "id_promotion"=> 3,
             "action" => false
             
     ],
     
-    [ "image" => 'img1.png',
+    [ 
+        "id"=> 7,
+    "image" => 'img1.png',
     "nom" => 'modou',
     "prenom" => 'ndiaye',
     "email" => 'modou@gmail?com',
     "genre" => 'M',
     "telephone" => '777864799',
+    "id_promotion"=> 3,
     "action" => false
     
 ],
-[ "image" => 'img1.png',
+[ 
+"id"=> 8,
+"image" => 'img1.png',
 "nom" => 'modou',
 "prenom" => 'ndiaye',
 "email" => 'modou@gmail?com',
 "genre" => 'M',
 "telephone" => '777573799',
-"action" => false
+"id_promotion"=> 3,
+"action" => true
 
 ],
-[ "image" => 'img1.png',
+[ 
+"id"=> 9,
+"image" => 'img1.png',
 "nom" => 'modou',
 "prenom" => 'ndiaye',
 "email" => 'modou@gmail?com',
 "genre" => 'M',
 "telephone" => '772387799',
+"id_promotion"=> 4,
 "action" => false
 
-]
+],
+
+[ 
+    "id"=> 10,
+    "image" => 'img1.png',
+    "nom" => 'modou',
+    "prenom" => 'ndiaye',
+    "email" => 'modou@gmail?com',
+    "genre" => 'M',
+    "telephone" => '772387799',
+    "id_promotion"=> 5,
+    "action" => false
+    
+],
+
+[ 
+    "id"=> 11,
+    "image" => 'img1.png',
+    "nom" => 'modou',
+    "prenom" => 'ndiaye',
+    "email" => 'modou@gmail?com',
+    "genre" => 'M',
+    "telephone" => '772387799',
+    "id_promotion"=> 6,
+    "action" => true
+    
+],
+
+[ 
+    "id"=> 12,
+    "image" => 'img1.png',
+    "nom" => 'modou',
+    "prenom" => 'ndiaye',
+    "email" => 'modou@gmail?com',
+    "genre" => 'M',
+    "telephone" => '772387799',
+    "id_promotion"=> 6,
+    "action" => false
+    
+],
+[ 
+    "id"=> 13,
+    "image" => 'img1.png',
+    "nom" => 'modou',
+    "prenom" => 'ndiaye',
+    "email" => 'modou@gmail?com',
+    "genre" => 'M',
+    "telephone" => '772387799',
+    "id_promotion"=> 6,
+    "action" => false
+    
+],
+[ 
+    "id"=> 14,
+    "image" => 'img1.png',
+    "nom" => 'Daouda',
+    "prenom" => 'Diop',
+    "email" => 'modou@gmail?com',
+    "genre" => 'M',
+    "telephone" => '772387799',
+    "id_promotion"=> 1,
+    "action" => false
+    
+],
+[ 
+    "id"=> 15,
+    "image" => 'img1.png',
+    "nom" => 'Awa',
+    "prenom" => 'ndiaye',
+    "email" => 'awa@gmail?com',
+    "genre" => 'F',
+    "telephone" => '772387799',
+    "id_promotion"=> 2,
+    "action" => true
+    
+],
+[ 
+    "id"=> 16,
+    "image" => 'img1.png',
+    "nom" => 'Diuma',
+    "prenom" => 'ndiaye',
+    "email" => 'diou@gmail?com',
+    "genre" => 'F',
+    "telephone" => '772387799',
+    "id_promotion"=> 2,
+    "action" => true
+    
+],
+[ 
+    "id"=> 17,
+    "image" => 'img1.png',
+    "nom" => 'omar',
+    "prenom" => 'ndiaye',
+    "email" => 'omaru@gmail?com',
+    "genre" => 'M',
+    "telephone" => '772387799',
+    "id_promotion"=> 4,
+    "action" => true
+    
+],
+[ 
+    "id"=> 19,
+    "image" => 'img1.png',
+    "nom" => 'abou',
+    "prenom" => 'sy',
+    "email" => 'abou@gmail?com',
+    "genre" => 'M',
+    "telephone" => '772387799',
+    "id_promotion"=> 3,
+    "action" => false
+    
+],
+[ 
+    "id"=> 20,
+    "image" => 'img1.png',
+    "nom" => 'saliou',
+    "prenom" => 'diouf',
+    "email" => 'sdiouf@gmail?com',
+    "genre" => 'M',
+    "telephone" => '772387799',
+    "id_promotion"=> 1,
+    "action" => false
+    
+    ]
+
+
     ];
 
     savefile(PATHAPRENANT, $student);
@@ -109,17 +260,25 @@ foreach($recherches as  $recherche ) {
 return $result;
 }
 
+
+$apprenants = findAllStudents(); 
+$tabApp=array();
+foreach($apprenants as $student){
+    if($_SESSION["id_promotion"] == $student["id_promotion"]){
+        $tabApp[] = $student;
+    }
+}
+$apprenants=$tabApp;
 // fonction pagination
-$eleByPage=4 ;
+$count = $tabApp;
+$eleByPage= 4;
 $pageEtu = isset($_GET['pageAff']) ? $_GET['pageAff'] : 1;
-$totalPage=ceil(count(findAllStudents())/$eleByPage); //ceil() fonction qui arrondit par exee
+$totalPage=ceil(count($count)/$eleByPage); //ceil() fonction qui arrondit par exee
 // echo($pageEtu<1 || $pageEtu>$totalPage);
 if($pageEtu<1 || $pageEtu>$totalPage)
 header("Location:?page=$page&pageAff=1");
 $eleDeb = ($pageEtu-1)*$eleByPage;
-$etudiantsPage = array_slice(findAllStudents(), $eleDeb, $eleByPage);
-
-
+$etudiantsPage = array_slice($count, $eleDeb, $eleByPage);
 
 
 $apprenants =findAllStudents();

@@ -30,7 +30,7 @@
                         </select>
                     </div>
                     <div class="boite clandrier flex-cc">
-                    <input type="date" name="b" id="date" value="<?= date('Y-m-d');?>">
+                    <input type="date" name="date" id="date" value="<?= date('Y-m-d');?>">
                     </div>
                     <div class="boite boutton flex-cc" style="background: #029386;">
                         <button type="submit">rafraichir</button>
@@ -74,6 +74,7 @@
                     <tbody>
                     
                         <?php
+
                         
                                 foreach ($presence as $student) {
                                 ?>
