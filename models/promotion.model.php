@@ -25,7 +25,7 @@
 
 
 
-        
+        // promotion dynamique
     function enablePromotion($idPromo){
         $promotions = findPromotion();
         foreach ($promotions as &$promo) {

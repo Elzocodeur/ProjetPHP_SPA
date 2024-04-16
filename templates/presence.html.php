@@ -1,5 +1,4 @@
-
-    <div class="title">
+<div class="title">
         <div class="left">Presence</div>
         <div class="right">Presence - Liste</div>
     </div>  
@@ -30,8 +29,9 @@
                         </select>
                     </div>
                     <div class="boite clandrier flex-cc">
-                    <input type="date" name="date" id="date" value="<?= date('Y-m-d');?>">
+                    <input class="calboit" type="date" name="date" id="date" value="<?= date('Y-m-d');?>">
                     </div>
+                    
                     <div class="boite boutton flex-cc" style="background: #029386;">
                         <button type="submit">rafraichir</button>
                     </div>
@@ -75,7 +75,7 @@
                     
                         <?php
 
-                        
+
                                 foreach ($presence as $student) {
                                 ?>
                                     <tr >
@@ -90,7 +90,7 @@
                                 <?php
                                 
                                 }
-                        
+                            
                         ?>
                     </tbody>
                 </table>

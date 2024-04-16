@@ -29,11 +29,12 @@
                                 </thead>
                                 <tbody>
                                 <?php  
+        
 
                                 foreach($promos as $promo){
                                     if($promo['status'] =='1'){
-                                        $_SESSION['id_promotion'] = $promo['id_promotion'];
                                         
+                                        $_SESSION['id_promotion'] = $promo['id_promotion'];
                                         
                                     }else{
                                         $_SESSION['status'] = '0';
@@ -42,6 +43,7 @@
 
                                 ?>  
                                     <tr>
+        
                                         <td><?=$promo['libelle'] ?> </td> 
                                         <td><?=$promo['dateDebut'] ?></td>
                                         <td><?=$promo['dateFin'] ?></td>
@@ -51,15 +53,7 @@
                                     </tr>
                                     <?php } ?>  
                                 </tbody>
-    <!-- 
-                                    <script>
-                                            function uncheckOthers(checkbox) {
-                                            var checkboxes = document.getElementsByName('activation');
-                                            checkboxes.forEach(function(item) {
-                                            if (item !== checkbox) item.checked = false;
-                                            });
-                                            }
-                                    </script> -->
+
 
                     </table>
 </div>

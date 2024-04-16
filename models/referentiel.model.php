@@ -24,6 +24,7 @@
         }  
         return $result;
         }
+
     $refDig = findAllReferentiels();
     if (isset($_POST["search"])){
         $refDig= recherche($_POST["search"]);

@@ -268,6 +268,7 @@ foreach($apprenants as $student){
         $tabApp[] = $student;
     }
 }
+
 $apprenants=$tabApp;
 // fonction pagination
 $count = $tabApp;
@@ -288,33 +289,6 @@ if (isset($_POST["search"])){
 }
 
 
-
-
-
-        
-
-        // function findStudents($page = 1, $perPage = 4, $filterEmail = null) {
-        //     $students = findAllStudents(); // Remplacez cette ligne par la logique pour obtenir tous les étudiants depuis la source de données
-        
-        //     // Filtrer par email si un filtre est spécifié
-        //     if ($filterEmail !== null) {
-        //         $filteredStudents = array_filter($students, function($student) use ($filterEmail) {
-        //             return $student['email'] == trim($filterEmail);
-        //         });
-        //     } else {
-        //         $filteredStudents = $students;
-        //     }
-        //     // Pagination
-        //     $totalStudents = count($filteredStudents);
-        //     $totalPages = ceil($totalStudents / $perPage);
-        //     $start = ($page - 1) * $perPage;
-        //     $paginatedStudents = array_slice($filteredStudents, $start, $perPage);
-        
-        //     return [
-        //         'students' => $paginatedStudents,
-        //         'totalPages' => $totalPages
-        //     ];
-        // }
 
 
 
