@@ -16,6 +16,7 @@
 
 								}
 								$refDig=$tabInt;
+								 
 								foreach($refDig as $referent) :  ?>
 
 								<div class="img">
