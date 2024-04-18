@@ -33,7 +33,7 @@
                     </div>
                     
                     <div class="boite boutton flex-cc" style="background: #029386;">
-                        <button type="submit">rafraichir</button>
+                        <button type="submit"  name="refresh">rafraichir</button>
                     </div>
                 </div>
                 <style>
@@ -71,12 +71,14 @@
                         </tr>
                     </thead>
                     <!-- Contenu du tableau -->
-                    <tbody>
+                    <!-- <tbody> -->
                     
                         <?php
+                        include_once ("../models/test.php");
 
+                                
 
-                                foreach ($presence as $student) {
+                                foreach (filtrerPresences($presence) as $student) {
                                 ?>
                                     <tr >
                                         <td><?= $student["matricule"]; ?></td>
