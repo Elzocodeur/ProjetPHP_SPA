@@ -12,7 +12,7 @@
 
                     <div class="boite status flex-cc">
                         <select name="status" id="select-status">
-                            <option value="">Status</option>
+                            <option value="all">Status</option>
                             <option value="present" <?= $selectedStatus == 'present' ? 'selected' : '' ?>><span>present</span></option>
                             <option value="absent" <?= $selectedStatus == 'absent' ? 'selected' : '' ?>>absent</option>
                         </select>
@@ -29,7 +29,8 @@
                         </select>
                     </div>
                     <div class="boite clandrier flex-cc">
-                    <input class="calboit" type="date" name="date" id="date" value="<?= date('Y-m-d');?>">
+                    <input class="calboit" type="date" name="date"
+                            value="<?=date('Y-m-d'); ?>">
                     </div>
                     
                     <div class="boite boutton flex-cc" style="background: #029386;">
@@ -74,11 +75,7 @@
                     <!-- <tbody> -->
                     
                         <?php
-                        include_once ("../models/test.php");
-
-                                
-
-                                foreach (filtrerPresences($presence) as $student) {
+                                foreach ($data_filter as $student) {
                                 ?>
                                     <tr >
                                         <td><?= $student["matricule"]; ?></td>

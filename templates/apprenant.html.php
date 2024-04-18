@@ -3,16 +3,24 @@
         <div class="left">Promotions</div>
         <div class="right">Promos - Création</div>
     </div>
-    <div class="conteneur">
+    <form class="conteneur" method="POST">
+            <?php
+                        $selectedRef = isset($_POST['referenciel']) ? $_POST['referenciel'] : '';
+                ?>
         <div class="contain1">
             <span>Promotion :</span>
             <span>promotion <?= $_SESSION['id_promotion']?></span>
         </div>
-        <div class="contain2">
-            <span>Referentiel :</span>
-            <span>Dev Web/mobile</span>
-        </div>
-    </div>
+        <select  name="referenciel"  onchange="this.form.submit()"  class="contain2">
+
+                            <option value="">Reférenciel</option>
+                            <option value="dev_web" onchange="this.form.submit()" <?= $selectedRef == 'dev_web' ? 'selected' : '' ?>>dev_web</option>
+                            <option value="data" onchange="this.form.submit()" <?= $selectedRef == 'data' ? 'selected' : '' ?>>data</option>
+                            <option value="ref_dig" onchange="this.form.submit()"  <?= $selectedRef == 'ref_dig' ? 'selected' : '' ?>>ref_dig</option>
+                            <option value="aws" onchange="this.form.submit()" <?= $selectedRef == 'aws' ? 'selected' : '' ?>>aws</option>
+                            <option value="hackeuse" onchange="this.form.submit()" <?= $selectedRef == 'hackeuse' ? 'selected' : '' ?>>hackeuse</option>
+        </select>
+    </form>
     
     <div class="content">
         <!-- partie2 lister apprenants -->
@@ -49,6 +57,7 @@
                                 <th class="titre email1" data-label="Email">Email</th>
                                 <th class="titre" data-label="Genre">Genre</th>
                                 <th class="titre" data-label="Telephones">Telephones</th>
+                                <th class="titre" data-label="Telephones">Référentiel</th>
                                 <th class="titre" data-label="Actions">Actions</th>
                             </tr>
             
@@ -92,6 +101,10 @@
                                     </td>
                                     <td class="bloc">
                                         <div class="col-haut"></div>
+                                        <div class="col-bas"><?= $student['nom_referentiel'] ?></div>
+                                    </td>
+                                    <td class="bloc">
+                                        <div class="col-haut"></div>
                                         <input type="checkbox" id="my-checkbox-0" <?php if ($student['action']) : ?> checked <?php endif; ?> >
                                         <label for="my-checkbox-0"></label>
 
@@ -108,9 +121,13 @@
                     
                     <!-- Pagination -->
                     <div class="pagination">
-
+                    
                     <a href="#" class="page-link prev"><i class="fas fa-angle-left"></i></a>
                                 <?php 
+                                if($count == NULL){
+                                    $totalPage=1; 
+                                }else{
+
                                     for($i = 1; $i <= $totalPage; $i++){
 
                                         if($i == $pageEtu){
@@ -119,7 +136,7 @@
                                             echo "<a href='?pageAff=$i' class='page-link'>$i</a>";
                                         }
                                     }
-                                
+                                }                                
                                 
                                 ?>
                         <a href="#" class="page-link next"><i class="fas fa-angle-right"></i></a>

@@ -1,7 +1,6 @@
 <?php 
 
     function findPromotion(){
-
         // savefile(PATHPROMOTION, $promotion);
         $promotion = loadFile(PATHPROMOTION);
         return $promotion;
@@ -36,6 +35,7 @@
             }
         }
         savefile(PATHPROMOTION, $promotions);
+        header("Location:?page=promotion");
     }
 
     if (isset($_POST["activation"])){

@@ -25,7 +25,7 @@
       </label>
       <a href="#">Mot de passe Oublié?</a>
     </div>
-    <button class="btn" type="submit"><a href="?page=dash">Login</a></button>
+    <button class="btn" type="submit"><a href="promotion">Login</a></button>
   </div>
   </div>
 </body>

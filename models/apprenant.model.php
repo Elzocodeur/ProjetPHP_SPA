@@ -11,6 +11,8 @@ function findAllStudents(){
         "genre" => 'M',
         "telephone" => '777777777',
         "id_promotion"=> 1,
+        "id_referentiel"=> 1,
+        "nom_referentiel"=> 'dev_web',
         "action" => false
         
     ],
@@ -23,6 +25,8 @@ function findAllStudents(){
             "genre" => 'M',
             "telephone" => '777777777',
             "id_promotion"=> 1,
+            "id_referentiel"=> 1,
+            "nom_referentiel"=> 'dev_web',
             "action" => false
             
         ],
@@ -34,7 +38,9 @@ function findAllStudents(){
             "email" => 'pathe',
             "genre" => 'M',
             "telephone" => '777120777',
-            "id_promotion"=> 2,
+            "id_promotion"=> 1,
+            "id_referentiel"=> 1,
+            "nom_referentiel"=> 'dev_web',
             "action" => true
             
         ], 
@@ -46,7 +52,9 @@ function findAllStudents(){
             "email" => 'modou',
             "genre" => 'M',
             "telephone" => '777347977',
-            "id_promotion"=> 2,
+            "id_promotion"=> 1,
+            "id_referentiel"=> 2,
+            "nom_referentiel"=> 'dev_data',
             "action" => false
             
         ],
@@ -58,7 +66,9 @@ function findAllStudents(){
             "email" => 'andaw',
             "genre" => 'M',
             "telephone" => '777729777',
-            "id_promotion"=> 2, 
+            "id_promotion"=> 5, 
+            "id_referentiel"=>2,
+            "nom_referentiel"=> 'dev_data',
             "action" => true
             
         ],
@@ -70,7 +80,9 @@ function findAllStudents(){
             "email" => 'issa',
             "genre" => 'M',
             "telephone" => '777987777',
-            "id_promotion"=> 3,
+            "id_promotion"=> 5,
+            "id_referentiel"=> 2,
+            "nom_referentiel"=> 'aws',
             "action" => false
             
     ],
@@ -83,7 +95,9 @@ function findAllStudents(){
     "email" => 'modou@gmail?com',
     "genre" => 'M',
     "telephone" => '777864799',
-    "id_promotion"=> 3,
+    "id_promotion"=> 6,
+    "id_referentiel"=> 6,
+    "nom_referentiel"=> 'aws',
     "action" => false
     
 ],
@@ -95,7 +109,9 @@ function findAllStudents(){
 "email" => 'modou@gmail?com',
 "genre" => 'M',
 "telephone" => '777573799',
-"id_promotion"=> 3,
+"id_promotion"=> 6,
+"id_referentiel"=> 6,
+"nom_referentiel"=> 'aws',
 "action" => true
 
 ],
@@ -107,7 +123,9 @@ function findAllStudents(){
 "email" => 'modou@gmail?com',
 "genre" => 'M',
 "telephone" => '772387799',
-"id_promotion"=> 4,
+"id_promotion"=> 6,
+"id_referentiel"=> 6,
+"nom_referentiel"=> 'ref_dig',
 "action" => false
 
 ],
@@ -121,6 +139,8 @@ function findAllStudents(){
     "genre" => 'M',
     "telephone" => '772387799',
     "id_promotion"=> 5,
+    "id_referentiel"=> 4,
+    "nom_referentiel"=> 'ref_dig',
     "action" => false
     
 ],
@@ -133,7 +153,9 @@ function findAllStudents(){
     "email" => 'modou@gmail?com',
     "genre" => 'M',
     "telephone" => '772387799',
-    "id_promotion"=> 6,
+    "id_promotion"=> 1,
+    "id_referentiel"=> 4,
+    "nom_referentiel"=> 'ref_dig',
     "action" => true
     
 ],
@@ -146,7 +168,9 @@ function findAllStudents(){
     "email" => 'modou@gmail?com',
     "genre" => 'M',
     "telephone" => '772387799',
-    "id_promotion"=> 6,
+    "id_promotion"=> 1,
+    "id_referentiel"=> 5,
+    "nom_referentiel"=> 'ref_dig',
     "action" => false
     
 ],
@@ -159,6 +183,8 @@ function findAllStudents(){
     "genre" => 'M',
     "telephone" => '772387799',
     "id_promotion"=> 6,
+    "id_referentiel"=> 5,
+    "nom_referentiel"=> 'ref_dig',
     "action" => false
     
 ],
@@ -171,6 +197,8 @@ function findAllStudents(){
     "genre" => 'M',
     "telephone" => '772387799',
     "id_promotion"=> 1,
+    "id_referentiel"=> 1,
+    "nom_referentiel"=> 'hackeuse',
     "action" => false
     
 ],
@@ -182,7 +210,9 @@ function findAllStudents(){
     "email" => 'awa@gmail?com',
     "genre" => 'F',
     "telephone" => '772387799',
-    "id_promotion"=> 2,
+    "id_promotion"=> 5,
+    "id_referentiel"=> 2,
+    "nom_referentiel"=> 'aws',
     "action" => true
     
 ],
@@ -194,7 +224,9 @@ function findAllStudents(){
     "email" => 'diou@gmail?com',
     "genre" => 'F',
     "telephone" => '772387799',
-    "id_promotion"=> 2,
+    "id_promotion"=> 5,
+    "id_referentiel"=> 2,
+    "nom_referentiel"=> 'dev_web',
     "action" => true
     
 ],
@@ -206,7 +238,9 @@ function findAllStudents(){
     "email" => 'omaru@gmail?com',
     "genre" => 'M',
     "telephone" => '772387799',
-    "id_promotion"=> 4,
+    "id_promotion"=> 5,
+    "id_referentiel"=> 3,
+    "nom_referentiel"=> 'dev_web',
     "action" => true
     
 ],
@@ -218,7 +252,9 @@ function findAllStudents(){
     "email" => 'abou@gmail?com',
     "genre" => 'M',
     "telephone" => '772387799',
-    "id_promotion"=> 3,
+    "id_promotion"=> 1,
+    "id_referentiel"=> 3,
+    "nom_referentiel"=> 'dev_data',
     "action" => false
     
 ],
@@ -231,6 +267,8 @@ function findAllStudents(){
     "genre" => 'M',
     "telephone" => '772387799',
     "id_promotion"=> 1,
+    "id_referentiel"=> 2,
+    "nom_referentiel"=> 'dev_web',
     "action" => false
     
     ]
@@ -260,35 +298,64 @@ foreach($recherches as  $recherche ) {
 return $result;
 }
 
-
+// activation promotion checked
 $apprenants = findAllStudents(); 
 $tabApp=array();
 foreach($apprenants as $student){
-    if($_SESSION["id_promotion"] == $student["id_promotion"]){
+    if($_SESSION["id_promotion"] == $student["id_promotion"]    ){
         $tabApp[] = $student;
     }
 }
-
 $apprenants=$tabApp;
-// fonction pagination
+
+
+// // fonction pagination
+
 $count = $tabApp;
-$eleByPage= 4;
-$pageEtu = isset($_GET['pageAff']) ? $_GET['pageAff'] : 1;
-$totalPage=ceil(count($count)/$eleByPage); //ceil() fonction qui arrondit par exee
-// echo($pageEtu<1 || $pageEtu>$totalPage);
-if($pageEtu<1 || $pageEtu>$totalPage)
-header("Location:?page=$page&pageAff=1");
-$eleDeb = ($pageEtu-1)*$eleByPage;
-$etudiantsPage = array_slice($count, $eleDeb, $eleByPage);
+if($count == NULL){
 
+}
+else{
 
-$apprenants =findAllStudents();
-$apprenants = $etudiantsPage;
-if (isset($_POST["search"])){
-    $apprenants= recherche($_POST["search"]);
+    $eleByPage= 4;
+    $pageEtu = isset($_GET['pageAff']) ? $_GET['pageAff'] : 1;
+    $totalPage=ceil(count($count)/$eleByPage); //ceil() fonction qui arrondit par exee
+    // echo($pageEtu<1 || $pageEtu>$totalPage);
+    if($pageEtu<1 || $pageEtu>$totalPage)
+    header("Location:?page=$page&pageAff=1");
+    $eleDeb = ($pageEtu-1)*$eleByPage;
+    $etudiantsPage = array_slice($count, $eleDeb, $eleByPage);
+
+    $apprenants = findAllStudents();
+    $apprenants = $etudiantsPage;
+    if (isset($_POST["search"])){
+        $apprenants= recherche($_POST["search"]);
+    }
+    $data_filter = $apprenants;
+
 }
 
 
+// filtre par referentiel selected
+function filtrerReferentiels($apprenants)
+{
+    $filteredData = $apprenants;
+    if(isset($_POST['referenciel'])){ 
+        $referentielFilter = $_POST['referenciel'];
+        if ($referentielFilter !== '') {
+            $filteredData = array_filter($filteredData, function ($row) use ($referentielFilter) {
+                return $row['nom_referentiel'] === $referentielFilter;
+            });
+        }
+
+        
+    }
+    return $filteredData;
+    
+}
+// var_dump(filtrerReferentiels($apprenants));
+
+$apprenants = filtrerReferentiels($apprenants);
 
 
 

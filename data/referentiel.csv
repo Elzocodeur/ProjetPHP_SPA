@@ -1,9 +1,11 @@
-id_referentiel,image,nom,statut,id_promotion
-1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,"Dev Web/mobile",Active,1
-2,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,"Référence Digital",Active,3
-3,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,AWS,Active,5
-4,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,"Référence Digital",Active,4
-5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,"Dev data",Active,2
-6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,Hackeuse,Active,5
-7,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,AWS,Active,5
-8,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,Hackeuse,Active,5
+id_referentiel,id_promotion,image,nom_referentiel,statut
+1,1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,dev_web,Actif
+2,5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,dev_data,Actif
+3,5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,dev_web,Actif
+4,5,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,ref_dig,Actif
+5,6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,dev_web,Actif
+6,6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,aws,Actif
+7,6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,dev_web,Actif
+8,6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,ref_dig,Actif
+9,6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,hackeuse,Actif
+10,6,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0cnxfmp6qG9-nSGkKy7yQgaCNnxdgYJ-BIben91IXRQOfVXieiVHPQfEovSQ4swQuL8&usqp=CAU,dev_data,Actif

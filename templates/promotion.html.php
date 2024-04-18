@@ -28,8 +28,8 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    
                                 <?php  
-        
 
                                 foreach($promos as $promo){
                                     if($promo['status'] =='1'){
@@ -48,7 +48,7 @@
                                         <td><?=$promo['dateDebut'] ?></td>
                                         <td><?=$promo['dateFin'] ?></td>
                                         <form action="" method="POST">
-                                            <td><input type="checkbox" onchange="this.form.submit()"  value="<?= $promo['id_promotion'] ?>"  name="activation"   <?=$promo['status'] =='1' ? 'checked ': ''?>class="check" ></td>
+                                            <td><input type="checkbox"  onchange="this.form.submit()" value="<?= $promo['id_promotion'] ?>"  name="activation"   <?=$promo['status'] =='1' ? 'checked ': ''?>class="check" ></td>
                                         </form>
                                     </tr>
                                     <?php } ?>  

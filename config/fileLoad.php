@@ -10,8 +10,6 @@
                     }
                     return $data;
                 }
-
-
                 function savefile($fichier, $data){
                     $fp = fopen($fichier, 'w');
                     fputcsv($fp, array_keys(current($data))); // Write the headers
