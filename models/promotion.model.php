@@ -22,8 +22,6 @@
             $promos= recherche($_POST["search"]);
         } 
 
-
-
         // promotion dynamique
     function enablePromotion($idPromo){
         $promotions = findPromotion();

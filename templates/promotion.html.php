@@ -43,7 +43,6 @@
 
                                 ?>  
                                     <tr>
-        
                                         <td><?=$promo['libelle'] ?> </td> 
                                         <td><?=$promo['dateDebut'] ?></td>
                                         <td><?=$promo['dateFin'] ?></td>

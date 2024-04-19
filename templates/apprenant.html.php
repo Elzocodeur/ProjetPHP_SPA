@@ -12,7 +12,7 @@
             <span>promotion <?= $_SESSION['id_promotion']?></span>
         </div>
         <select  name="referenciel"  onchange="this.form.submit()"  class="contain2">
-
+                    
                             <option value="">Reférenciel</option>
                             <option value="dev_web" onchange="this.form.submit()" <?= $selectedRef == 'dev_web' ? 'selected' : '' ?>>dev_web</option>
                             <option value="data" onchange="this.form.submit()" <?= $selectedRef == 'data' ? 'selected' : '' ?>>data</option>
