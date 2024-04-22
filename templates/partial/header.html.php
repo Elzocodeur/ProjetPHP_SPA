@@ -1,3 +1,9 @@
+<?php 
+    if(isset($_POST['logout'])){
+        session_destroy();
+        header("Location: ../");
+    }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -36,10 +42,11 @@
         <input type="date" name="dateofbirth" id="dateofbirth" value="<?= date('Y-m-d');?>">
         <div class="profil">
             <img src="public/images/profile.jpeg" class="image" alt="">
-            <div class="info">
+            <form method="post" class="info">
                 <p>Elimane GNING</p>
                 <small>Admin <i class="fa fa-angle-down" aria-hidden="true"></i></small>
-            </div>
+                <button type="submit" name="logout">Deconnexion</button>
+            </form>
         </div>
     </div>
 </header>

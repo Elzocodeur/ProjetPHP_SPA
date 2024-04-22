@@ -126,16 +126,13 @@ function filtrerPresences($presences)
 $data_filter = filtrerPresences($presences);
 $eleByPage = 4;
 $pageEtu = $_GET['pageAff'] ?? 1;
-$_SESSION['affichePresence'] = $_REQUEST;
-
-
+// $_SESSION['affichePresence'] = $_REQUEST;
 $totalPage = ceil(count($data_filter) / $eleByPage);
 
 if ($pageEtu < 1 || $pageEtu > $totalPage)
     $pageEtu = 0;
 $eleDeb = ($pageEtu - 1) * $eleByPage;
 $data_filter = array_slice($data_filter, $eleDeb, $eleByPage);
-
 
 
 
