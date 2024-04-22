@@ -4,8 +4,6 @@
 
 function listPresence()
 {
-
-
     $presence = [
             [
                 "id" => 1,
@@ -20,6 +18,7 @@ function listPresence()
     // savefile(PATHPRESENCE, $presence);
 
     $presence = loadFile(PATHPRESENCE);
+
     return $presence;
 }
 // dd($getPresence);
@@ -34,6 +33,7 @@ function recherche($search)
     $result = [];
     foreach ($recherches as  $recherche) {
         if ($recherche["matricule"] == trim($search)) {
+
             $result[] = $recherche;
         }
     }
@@ -102,6 +102,8 @@ function filtrerPresences($presences)
                 return $row['referenciel'] === $referentielFilter;
             });
         }
+        
+        // dd($dateFilter);
         if($dateFilter !== '') {
             $formattedDateFilter = date('Y-m-d', strtotime($dateFilter));
             // on filtre la date formater stocker dans la variable $formattedDateFilter
@@ -121,6 +123,10 @@ function filtrerPresences($presences)
 
 
 
+
+
+
+
 // -------- PAGINATION---------
 
 $data_filter = filtrerPresences($presences);
@@ -131,17 +137,12 @@ $totalPage = ceil(count($data_filter) / $eleByPage);
 
 if ($pageEtu < 1 || $pageEtu > $totalPage)
     $pageEtu = 0;
-$eleDeb = ($pageEtu - 1) * $eleByPage;
-$data_filter = array_slice($data_filter, $eleDeb, $eleByPage);
-
-
-
-
+    $eleDeb = ($pageEtu - 1) * $eleByPage;
+    $data_filter = array_slice($data_filter, $eleDeb, $eleByPage);
 
 
 
 // -----------BAR SEARCH ALL ------------
-
 $presence = $data_filter;
 if (isset($_POST["search"])) {
     $presence = recherche($_POST["search"]);

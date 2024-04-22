@@ -17,6 +17,7 @@
         }  
         return $result;
         }
+        
         $promos = findPromotion();
         if (isset($_POST["search"])){
             $promos= recherche($_POST["search"]);

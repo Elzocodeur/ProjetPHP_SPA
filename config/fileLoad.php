@@ -1,4 +1,5 @@
-<?php  
+<?php 
+
 
                 /* Lire les données d'un fichier CSV */
                 function loadFile($fichier) {
@@ -10,6 +11,9 @@
                     }
                     return $data;
                 }
+                
+
+                /* Ecrire les données d'un fichier CSV */
                 function savefile($fichier, $data){
                     $fp = fopen($fichier, 'w');
                     fputcsv($fp, array_keys(current($data))); // Write the headers
@@ -18,5 +22,4 @@
                     }
                     fclose($fp);
                 }
-
 ?> 

@@ -18,6 +18,45 @@
 
 
 
+
+/* Style de la liste des options */
+.custom-select .select-items {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: calc(10% - 2px); /* Largeur de la liste déroulante moins la bordure */
+    max-height: 200px; /* Hauteur maximale de la liste déroulante */
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 99;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+
+/* Affichage de la liste lorsqu'elle est activée */
+.custom-select.active .select-items {
+    display: block;
+
+    cursor: pointer;
+}
+
+/* Style des options */
+.custom-select .select-items div {
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+/* Effet hover sur les options */
+.custom-select .select-items div:hover {
+    background-color: #ddd;
+}
+
+
+
+
+
 .contain1 > span:nth-child(2) {
     color: var(--main-color);
     font-weight: bold;

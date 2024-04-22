@@ -3,25 +3,57 @@
         <div class="left">Promotions</div>
         <div class="right">Promos - Création</div>
     </div>
-    <form class="conteneur" method="POST">
-            <?php
-                        $selectedRef = isset($_POST['referenciel']) ? $_POST['referenciel'] : '';
-                ?>
-        <div class="contain1">
-            <span>Promotion :</span>
-            <span>promotion <?= $_SESSION['id_promotion']?></span>
-        </div>
-        <select  name="referenciel"  onchange="this.form.submit()"  class="contain2">
-                    
-                            <option value="">Reférenciel</option>
-                            <option value="dev_web" onchange="this.form.submit()" <?= $selectedRef == 'dev_web' ? 'selected' : '' ?>>dev_web</option>
-                            <option value="data" onchange="this.form.submit()" <?= $selectedRef == 'data' ? 'selected' : '' ?>>data</option>
-                            <option value="ref_dig" onchange="this.form.submit()"  <?= $selectedRef == 'ref_dig' ? 'selected' : '' ?>>ref_dig</option>
-                            <option value="aws" onchange="this.form.submit()" <?= $selectedRef == 'aws' ? 'selected' : '' ?>>aws</option>
-                            <option value="hackeuse" onchange="this.form.submit()" <?= $selectedRef == 'hackeuse' ? 'selected' : '' ?>>hackeuse</option>
-        </select>
-    </form>
+
+
     
+    <form action="" method="post" class="dropdown">
+    <?php
+    $selectedRefs = isset($_POST['referenciel']) ? $_POST['referenciel'] : array();
+    ?>
+    <div class="custom-select" onclick="this.classList.toggle('active')">
+        <div class="select-selected" style="font-size: 1.8em;"  onclick="toggleSelectItems()">Référenciels</div> 
+        <img src="../public/images/angle-down.png" style="width: 30px;  height:20px; margin-left: 95px; margin-top: -80px"  alt="">
+        <div class="select-items"   id="selectItems">
+            <?php
+            $allrefs = findAllReferentiels();
+            foreach ($allrefs as $activeref) {
+                if ($_SESSION["id_promotion"] == $activeref['id_promotion']) {
+            ?>
+                    <div>
+                        <input type="checkbox" onchange="this.form.submit()"<?= in_array($activeref['nom_referentiel'], $selectedRefs) ? 'checked' : '' ?> id="<?= $activeref['nom_referentiel'] ?>" name="referenciel[]" value="<?= $activeref['nom_referentiel']?>">
+                        <label for="<?= $activeref['nom_referentiel'] ?>"><?= $activeref['nom_referentiel'] ?></label>
+                    </div>
+            <?php
+                }
+            }
+            ?>
+        </div>
+    </div>
+</form>
+
+<script>
+    function toggleSelectItems() {
+        var selectItems = document.getElementById('selectItems');
+        if (selectItems.style.display === 'none') {
+            selectItems.style.display = 'block';
+            localStorage.setItem('referenciel', true);
+        } else {
+            selectItems.style.display = 'none';
+            localStorage.setItem('referenciel', false);
+        }
+    }
+
+    // Vérifier l'état du div contenant les select-items au chargement de la page
+    if (localStorage.getItem('referenciel') === 'true') {
+        document.getElementById('selectItems').style.display = 'block';
+        document.getElementById('referenciel').checked = true;
+    } else {
+        document.getElementById('selectItems').style.display = 'none';
+        document.getElementById('referenciel').checked = false;
+    }
+</script>
+
+
     <div class="content">
         <!-- partie2 lister apprenants -->
             <div class="flex-col-left">

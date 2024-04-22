@@ -1,5 +1,5 @@
 <?php 
-
+include_once 'models/referentiel.model.php';
 function findAllStudents(){
     $student = [
         [ 
@@ -285,8 +285,10 @@ return $student;
 }
 
 
+
+
 //  filtrer  par email  
-function recherche($filtrer){
+function recherche1($filtrer){
     $recherches=findAllStudents();
     $result=[];
 foreach($recherches as  $recherche ) {  
@@ -329,7 +331,7 @@ else{
     $apprenants = findAllStudents();
     $apprenants = $etudiantsPage;
     if (isset($_POST["search"])){
-        $apprenants= recherche($_POST["search"]);
+        $apprenants= recherche1($_POST["search"]);
     }
     $data_filter = $apprenants;
 
@@ -340,22 +342,19 @@ else{
 function filtrerReferentiels($apprenants)
 {
     $filteredData = $apprenants;
-    if(isset($_POST['referenciel'])){ 
+    if(isset($_POST['referenciel']) && !empty($_POST['referenciel'])) { 
         $referentielFilter = $_POST['referenciel'];
-        if ($referentielFilter !== '') {
+                if (!empty($referentielFilter)) {
             $filteredData = array_filter($filteredData, function ($row) use ($referentielFilter) {
-                return $row['nom_referentiel'] === $referentielFilter;
+                return in_array($row['nom_referentiel'], $referentielFilter);
             });
         }
-
-        
     }
     return $filteredData;
-    
 }
-// var_dump(filtrerReferentiels($apprenants));
 
 $apprenants = filtrerReferentiels($apprenants);
+
 
 
 

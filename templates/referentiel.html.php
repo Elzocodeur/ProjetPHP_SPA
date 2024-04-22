@@ -14,8 +14,9 @@
 										$tabInt[] = $referent;
 									}
 
-								}
+				 	 }
 								$refDig=$tabInt;
+
 								foreach($refDig as $referent) :  ?>
 
 								<div class="img">
@@ -29,6 +30,7 @@
 								<img src="<?= $referent['image'] ?>" alt="">
 								<div class="ref">
 									<span><?= $referent['nom_referentiel'] ?></span> <br>
+
 									<form action="apprenant" method="POST">
 										<button class="active" type="submit" name="referenciel" value="<?= $referent['nom_referentiel'] ?>"><?= $referent['statut'] ?></button>
 									</form>

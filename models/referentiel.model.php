@@ -81,13 +81,9 @@
         ];
 
         savefile(PATHREFERENTIEL, $referentiel);
-        $referentiel = loadFile(PATHREFERENTIEL);
-        
-
-        return $referentiel;
+        $referentiels = loadFile(PATHREFERENTIEL);
+        return $referentiels;
     }
-
-
 
         // filtrer haut de  la page champ de recherche
         function recherche($search){

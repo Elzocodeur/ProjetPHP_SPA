@@ -32,13 +32,11 @@
                                 <?php  
 
                                 foreach($promos as $promo){
-                                    if($promo['status'] =='1'){
-                                        
+                                    if($promo['status'] =='1'){ 
                                         $_SESSION['id_promotion'] = $promo['id_promotion'];
                                         
                                     }else{
                                         $_SESSION['status'] = '0';
-                                        
                                     }
 
                                 ?>  
