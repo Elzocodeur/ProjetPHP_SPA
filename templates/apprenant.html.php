@@ -12,7 +12,7 @@
     ?>
     <div class="custom-select" onclick="this.classList.toggle('active')">
         <div class="select-selected" style="font-size: 1.8em;"  onclick="toggleSelectItems()">Référenciels</div> 
-        <img src="../public/images/angle-down.png" style="width: 30px;  height:20px; margin-left: 95px; margin-top: -80px"  alt="">
+        <img src="../public/images/angle-down.png" style="width: 30px;  height:20px; margin-left: 95px; margin-top: -50px"  alt="">
         <div class="select-items"   id="selectItems">
             <?php
             $allrefs = findAllReferentiels();
